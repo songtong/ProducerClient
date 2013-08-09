@@ -11,6 +11,7 @@ ProducerClient C#版本提供四个构造函数如下：
         public ProducerClient(string hosts, string weights);
         public ProducerClient(ProducerConfig config, string hosts);
         public ProducerClient(ProducerConfig config, string hosts, string weights)
+        
 其中：
         <param name="config">ProducerConfig对象，用以配置ProducerClient连接ProducerServer的方式</param>
         <param name="hosts">ProducerServer地址URI，以","分隔</param>
@@ -23,6 +24,7 @@ ProducerClient C#版本提供四个构造函数如下：
         public const int DEFAULT_CONNECT_TIMEOUT = 1;          //连接至Server端的延时
         public const int DEFAULT_DELAY_BASE = 500;             //发送重试延时基数
         public const int DEFAULT_DELAY_MULTIPLE = 5;           //发送重试延时倍数
+        
 其中：
         发送重试有延时，范围从delay_base直到delay_multiple * delay_base，每次重试延时增加1倍，直至最大
 
