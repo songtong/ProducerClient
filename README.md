@@ -13,9 +13,9 @@ ProducerClient C#版本提供四个构造函数如下：
         public ProducerClient(ProducerConfig config, string hosts, string weights)
         
 其中：
-        参数config为ProducerConfig对象，用以配置ProducerClient连接ProducerServer的方式
-        参数hosts为ProducerServer地址URI，以","分隔
-        参数weights为ProducerServer权重，以","分隔，数量需与hosts一致，范围[0-10]
+        <p>参数config为ProducerConfig对象，用以配置ProducerClient连接ProducerServer的方式</p>
+        <p>参数hosts为ProducerServer地址URI，以","分隔</p>
+        <p>参数weights为ProducerServer权重，以","分隔，数量需与hosts一致，范围[0-10]</p>
 
 如果不提供ProducerConfig参数，则使用默认值，默认配置如下：
 
